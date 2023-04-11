@@ -1,0 +1,734 @@
+/* CSS of layoutHtml begin */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    font-family: "微軟正黑體", sans-serif;
+}
+
+.wrap {
+    max-width: 1024px;
+    margin: 0 auto;
+
+}
+
+.headerInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(200, 200, 200, 0.3);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.headerInfo h1 {
+    padding: 20px 0 20px 30px;
+}
+
+.headerInfo>h1 a {
+    color: white;
+    background-image: url("https://i.postimg.cc/WbJbD0T3/logo.png");
+    text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    width: 182px;
+    height: 36px;
+    background-repeat: no-repeat;
+}
+
+.headerMenuLink {
+    display: flex;
+}
+
+.headerMenuLink li {
+    margin-right: 50px;
+}
+
+.headerMenuLink a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 19px;
+}
+
+.headerMenuLink a:hover {
+    color: #00cc99;
+}
+
+.headerMenuLink li::after {
+    content: "";
+    width: 0%;
+    height: 7px;
+    display: block;
+    background-color: #00cc99;
+    transition: 0.4s 0.2s;
+}
+
+.headerMenuLink li:hover::after {
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #323228;
+}
+
+.footerMenuLink {
+    display: flex;
+}
+
+.footerMenuLink a {
+    box-sizing: border-box;
+    display: block;
+    padding: 20px 20px 20px 15px;
+}
+
+.footerMenuLink img {
+    padding-top: 10px;
+    display: block;
+}
+
+.footerMenuLink a::after {
+    content: "";
+    width: 0%;
+    height: 7px;
+    display: block;
+    background-color: #888;
+    transition: 0.4s 0.2s;
+}
+
+.footerMenuLink a:hover::after {
+    width: 100%;
+}
+
+.footerInfo>h2 a {
+    color: white;
+    background-image: url("https://i.postimg.cc/WbJbD0T3/logo.png");
+    text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    width: 182px;
+    height: 36px;
+    background-repeat: no-repeat;
+}
+
+.footerInfo h2 {
+    margin-bottom: 5px;
+}
+
+.footerInfo .footerCopyRight {
+    color: #9b9b9b;
+    margin-left: 40px;
+}
+
+.footerInfo {
+    margin-left: 30px;
+}
+
+/* CSS of layoutHtml end */
+
+/* CSS of index.html begin */
+.headerSlogan {
+    color: #00cc99;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    background-image: url("https://i.postimg.cc/V6CmS8Ph/bg-index.png");
+}
+
+.headerInfoContent {
+    padding: 75px 0 150px 50px;
+}
+
+.headerSlogan .headerOfSchoolName {
+    color: white;
+}
+
+.headerSlogan button {
+    background-color: #00cc99;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.headerSlogan button:hover {
+    border: 3px solid lightgoldenrodyellow;
+}
+
+.headerSlogan button:active {
+    background-color: lightblue;
+}
+
+.headerSlogan button a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 35px;
+    display: block;
+    letter-spacing: 1.5px;
+}
+
+.headerSlogan button a:hover {
+    color: #000;
+}
+
+.courseTitle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.courseItem1 h2 {
+    margin-left: 25px;
+}
+
+.courseItem1 h2,
+.courseItem2 a {
+    color: #00cc99;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.courseItem1 h2 {
+    display: inline-block;
+    font-size: 28px;
+}
+
+.courseItem1 span {
+    color: #9b9b9b;
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.courseItem2 button {
+    background-color: #fff;
+    border: 2px solid #00cc99;
+    border-radius: 5px;
+    margin-right: 25px;
+    padding: 0;
+}
+
+.courseItem2 a {
+    display: block;
+    padding: 5px;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.courseItem2 button:hover {
+    border: 2px solid gold;
+}
+
+.courseContent {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.courseContent .item {
+    max-width: 320px;
+    box-shadow: 0 3px 5px lightgrey;
+    padding: 20px;
+    transition: .4s .2s;
+}
+
+.courseContent .item:hover {
+    box-shadow: 0 5px 15px lightblue;
+}
+
+.courseContent .item p {
+    text-align: left;
+    color: #9b9b9b;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.courseContent .item h3 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.courseContent .item img {
+    margin-bottom: 10px;
+}
+
+.courseCompare {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.courseCompare h2 {
+    display: inline-block;
+    font-size: 28px;
+    color: #00cc99;
+    margin-left: 25px;
+}
+
+.courseCompare span {
+    font-weight: bold;
+    font-size: 18px;
+    color: #9b9b9b;
+    padding-left: 10px;
+}
+
+.courseCompare {
+    margin-bottom: 30px;
+}
+
+.courseTable {
+    margin-bottom: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.courseTable .courseTableHight {
+    text-align: center;
+}
+
+.courseTable .courseTableHight:hover {
+    background-color: #f1f3f5;
+}
+
+.courseTable h3 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.courseTable th {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0 10px 25px;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    background-color: #f7f7f7;
+}
+
+.courseTable table {
+    margin: 0 auto;
+    width: 95%;
+}
+
+.courseTable table td {
+    padding: 15px 10px 10px 26px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.courseTable .courseTableContent {
+    color: #5ac9a4;
+}
+
+.formArea {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ebebeb;
+    align-items: center;
+    /* padding: 10px 50px 50px 50px; */
+    padding: 0 50px 25px 50px;
+}
+
+.formInfo input {
+    display: block;
+}
+
+.formSlogan p {
+    color: #323223;
+    font-weight: bold;
+    line-height: 2;
+    font-size: 25px;
+}
+
+.formInfo input {
+    display: block;
+    width: 400px;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-size: 18px;
+    outline: none;
+}
+
+.formInfo input:hover {
+    outline: 3px solid #00cc99;
+}
+
+.formInfo {
+    text-align: right;
+    padding-top: 60px;
+}
+
+.formInfo .submitButton {
+    font-size: 18px;
+    width: 130px;
+    margin-left: 270px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    background-color: #00cc99;
+    color: #fff;
+    text-align: center;
+}
+
+.formInfo .submitButton:hover {
+    outline: 3px solid #fff;
+}
+
+.formInfo .submitButton:active {
+    background-color: lightskyblue;
+}
+
+/* CSS of index.html end */
+
+
+
+/* CSS of course.html begin*/
+
+.courseSlogan {
+    background-image: url('https://i.postimg.cc/tTsv9Z2x/bg-course.png');
+}
+
+.courseInfoContent .item {
+    display: flex;
+}
+
+.courseInfoContent h2 {
+    color: #fff;
+    margin-right: 220px;
+    font-size: 36px;
+    margin: 110px 320px 0 40px;
+}
+
+.courseInfoContent .item span {
+    font-size: 20px;
+    color: #00cc99;
+}
+
+.courseInfoContent img {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 30px 0 0 10px;
+}
+
+.courseInfoContent button {
+    background-color: #00cc99;
+    border-radius: 5px;
+    width: 150px;
+    margin: 30px 0 230px 40px;
+    padding: 0;
+    border: 3px solid transparent;
+}
+
+.courseInfoContent button:hover {
+    border: 3px solid lightgoldenrodyellow;
+}
+
+.headercourseInfoContent button:active {
+    background-color: lightblue;
+}
+
+.courseInfoContent button a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    display: block;
+    padding: 5px;
+}
+
+.courseTeacher {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    position: relative;
+    margin-left: 100px;
+}
+
+.courseTeacher img {
+    margin: 50px 0 0 50px;
+}
+
+.courseTeacher h2 {
+    color: #00cc99;
+    font-size: 34px;
+    line-height: 1.5;
+    position: absolute;
+    top: 45%;
+    left: 42%;
+}
+
+.courseTeacher span {
+    color: #000;
+}
+
+.courseTeacher .teacherDescription {
+    list-style-type: disc;
+    line-height: 1.5;
+    margin: 125px 130px 0 0;
+    color: #9b9b9b;
+}
+
+.courseTeacher .teacherDescription li {
+    padding-left: 20px;
+}
+
+.advantages_Of_Hex_Course {
+    font-weight: bold;
+    margin-left: 90px;
+}
+
+.advantages_Of_Hex_Course h2 {
+    font-size: 34px;
+    color: #00cc99;
+    display: inline-block;
+    margin: 50px 0 30px 150px;
+    letter-spacing: 2px;
+}
+
+.advantagesMenu {
+    margin-left: 165px;
+    padding-right: 210px;
+}
+
+.advantages_Of_Hex_Course p {
+    color: #9b9b9b;
+    display: inline-block;
+    font-size: 20px;
+}
+
+
+.advantagesMenu li {
+    list-style-type: decimal;
+    line-height: 2;
+    padding-left: 20px;
+}
+
+.courseOutline {
+    margin-left: 100px;
+}
+
+.courseOutline h2 {
+    font-weight: bold;
+    font-size: 34px;
+    color: #00cc99;
+    display: inline-block;
+    margin: 50px 30px 30px 140px;
+    letter-spacing: 2px;
+}
+
+.courseOutline p {
+    font-weight: bold;
+    color: #9b9b9b;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.courseOutlineMenu li {
+    background-color: #ebebeb;
+    letter-spacing: 1px;
+    margin: 10px 200px 10px 140px;
+    padding: 10px 0 10px 35px;
+    font-weight: bold;
+}
+
+.courseOutlineMenu li:nth-child(even) {
+    background-color: #fff;
+    color: #a2a2a2;
+}
+
+.formRegister {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    padding: 150px;
+    background-color: #ebebeb;
+}
+
+.formRegister button {
+    background-color: #00cc99;
+    border-radius: 5px;
+    border: 1px solid #00cc99;
+    margin: 30px 0 0 50px;
+    padding: 0;
+}
+
+.formRegister p {
+    font-size: 30px;
+    line-height: 1.7;
+    margin-left: 30px;
+}
+
+.formRegister button a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 45px;
+    color: #fff;
+    font-size: 17px;
+}
+
+.formRegister button a:hover {
+    background-color: lightblue;
+}
+
+/* CSS of course.html end*/
+
+/* CSS of faq.html begin*/
+.faqSlogan {
+    background-image: url('https://i.postimg.cc/JzYFmR8S/bg-QA.png');
+}
+
+.faqInfoContent {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.faqInfoContent p {
+    color: #00cc99;
+    font-size: 18px;
+    margin: 10px 30px 40px 0;
+    letter-spacing: 1px;
+}
+
+.faqInfoContent h2 {
+    color: #fff;
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin: 110px 20px 0 0;
+}
+
+.faqInfoContent input {
+    border-radius: 3px;
+    border: 1px solid #fff;
+    outline: none;
+    margin: 0 0 230px 35px;
+    padding: 5px 0;
+    font-size: 18px;
+    width: 550px;
+    position: relative;
+}
+
+
+.faqInfoContent button {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    border: none;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 31.5%;
+    right: 34.8%;
+}
+
+.faqInfoContent img {
+    width: 33px;
+    display: inline-block;
+    padding: 7px;
+}
+
+.content-commonProblem {
+    font-weight: bold;
+}
+
+.content-commonProblem h3 {
+    color: #00cc99;
+    font-size: 32px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.content-commonProblem .item {
+    display: inline-block;
+    color: #9b9b9b;
+    margin-bottom: 30px;
+}
+
+.content-commonProblem p:nth-child(odd) {
+    margin: 0 0 7px 5px;
+    font-size: 18px;
+}
+
+.content-commonProblem p:nth-child(even) {
+    color: #9b9b9b;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    line-height: 1.3;
+}
+
+.content-commonProblem ul {
+    color: #9b9b9b;
+}
+
+.content-commonProblem li {
+    list-style-type: disc;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin-left: 50px;
+    padding-left: 10px;
+}
+
+.content-commonProblem ol li {
+    list-style-type: decimal;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    margin-left: 50px;
+    color: #9b9b9b;
+}
+
+.content-commonProblem a {
+    text-decoration: none;
+    color: #00cc99;
+}
+
+.commonProblem,
+.howToPay,
+.refund {
+    margin-bottom: 30px;
+    padding: 0 150px 0 80px;
+}
+
+/* ▽ 助教您好，這是特地設置的分隔線 ▽*/
+.commonProblem {
+    border-bottom: .5px dotted #00cc99;
+}
+
+.howToPay {
+    border-bottom: .5px dotted #00cc99;
+}
+
+/* △ 助教您好，這是特地設置的分隔線 △*/
+
+.formInfo textarea {
+    width: 400px;
+    margin-top: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    height: 200px;
+}
+
+.formInfo textarea:hover {
+    outline: 2px solid #00cc99;
+}
+
+.formArea .item1 {
+    margin-bottom: 230px;
+}
+
+/* CSS of faq.html end*/

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Billy_Ti">
+    <meta name="description" content="這是一個集合html css的排版的多頁式網頁，創造分頁連結的練習" />
+    <meta name="keywords" content="HTML排版,多頁式排版,html多分頁">
+    <meta property="og:title" content="HTML、CSS 開發多頁式網站 / 歡迎來到六角學院 / 首頁" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.facebook.com/groups/110635703123103" />
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png" />
+    <link rel="shortcut icon" href="https://i.postimg.cc/cHrBWgXT/logo-Resize-Image.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>HTML、CSS 開發多頁式網站 / 歡迎來到六角學院 / 首頁</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="headerSlogan">
+            <div class="headerInfo">
+                <h1>
+                    <a title="想看更多嗎" href="#">Hex School</a>
+                </h1>
+                <nav>
+                    <ul class="headerMenuLink">
+                        <li>
+                            <a target="blank" title="首頁" href="index.html">首頁</a>
+                        </li>
+                        <li>
+                            <a target="_blank" title="課程大綱" href="course.html">課程</a>
+                        </li>
+                        <li>
+                            <a target="_blank" title="相關問答" href="faq.html">問答</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="headerInfoContent">
+                <h2>歡迎來到<span class="headerOfSchoolName">六角學院</span><br>帶你一起攻略前端設計</h2>
+                <button><a target="_blank" title="只要你不放棄，六角學院就永遠在線上支持你到底"
+                        href="https://www.hexschool.com/courses/html_css.html">馬上去註冊 ➔</a></button>
+            </div>
+        </div>
+
+        <div class="courseTitle">
+            <div class="courseItem courseItem1">
+                <h2>精選課程</h2>
+                <span>幫助你拿到前端工程師的門票</span>
+            </div>
+            <div class="courseItem courseItem2">
+                <button>
+                    <a target="_blank" title="超值CP組合包" href="https://www.hexschool.com/courses/">更多課程</a>
+                </button>
+            </div>
+        </div>
+        <ul class="courseContent">
+            <li class="item">
+                <img src="https://i.postimg.cc/JzK2fb1q/html5.png" alt="htmlLogo">
+                <h3>Html 5 基礎教學</h3>
+                <p>
+                    主流前端網站設計的基礎，透過實際的範例了解正確的網站開發流程。
+                </p>
+            </li>
+            <li class="item">
+                <img src="https://i.postimg.cc/SR7rWhRr/rwd.png" alt="rwdLogo">
+                <h3>響應式網站設計</h3>
+                <p>
+                    六角學院提供業界響應式開發方法，讓學生了解完善的行動版開發觀念。
+                </p>
+            </li>
+            <li class="item">
+                <img src="https://i.postimg.cc/P58CcMzG/jQuery.png" alt="jQueryLogo">
+                <h3>jQuery 實戰教學</h3>
+                <p>
+                    分為四大主題:變數的使用、操作DOM、基本數學運算和套件運用。
+                </p>
+            </li>
+        </ul>
+
+        <div class="courseCompare">
+            <h2>課程比較</h2>
+            <span>線上課程與實體課程的差異</span>
+        </div>
+        <div class="courseTable">
+            <table>
+                <tr class="courseTableHight">
+                    <th>項目</th>
+                    <th>六角學院 線上課程</th>
+                    <th>一般線上課程</th>
+                    <th>實體課程</th>
+                </tr>
+                <tr class="courseTableHight">
+                    <td>費用</td>
+                    <td class="courseTableContent">較低</td>
+                    <td class="courseTableContent">較低</td>
+                    <td>較高</td>
+                </tr>
+                <tr class="courseTableHight">
+                    <td>學習效果</td>
+                    <td>一般</td>
+                    <td class="courseTableContent">較低</td>
+                    <td class="courseTableContent">很好</td>
+                </tr>
+                <tr class="courseTableHight">
+                    <td>Code review</td>
+                    <td class="courseTableContent">有</td>
+                    <td>無</td>
+                    <td>不一定</td>
+                </tr>
+                <tr class="courseTableHight">
+                    <td>課程更新速度</td>
+                    <td class="courseTableContent">普通</td>
+                    <td class="courseTableContent">普通</td>
+                    <td>較慢</td>
+                </tr>
+                <tr class="courseTableHight">
+                    <td>多次複習</td>
+                    <td class="courseTableContent">可</td>
+                    <td>可</td>
+                    <td>不可</td>
+                </tr>
+                <tr class="courseTableHight">
+                    <td>字幕</td>
+                    <td class="courseTableContent">有</td>
+                    <td>不一定</td>
+                    <td>板書</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="formArea">
+            <div class="formSlogan">
+                <p>你就是六角的下一個學生 !</p>
+                <p>快留下資料讓我們認識你吧</p>
+            </div>
+            <form class="formInfo" action="#">
+                <input type="text" name="name" placeholder="你的名字是 ?">
+                <input type="text" name="mail" placeholder="example@mail.com.tw">
+                <input class="submitButton" type="submit" value="送出">
+            </form>
+        </div>
+
+        <div class="footer">
+            <div class="footerInfo">
+                <h2>
+                    <a title="版權所有 翻印必究" href="#">Hex School</a>
+                </h2>
+                <span class="footerCopyRight">&copy; 2018 hexschool</span>
+            </div>
+            <nav>
+                <ul class="footerMenuLink">
+                    <li>
+                        <a target="_blank" title="FB gogo" href="#">
+                            <img src="https://i.postimg.cc/QtQ7DcPH/fb.png" alt="FB_Logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" title="TWITTER gogo" href="#">
+                            <img src="https://i.postimg.cc/wBhMRgkr/tw.png" alt="TWITTER_Logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" title="IG gogo" href="#">
+                            <img src="https://i.postimg.cc/QtCLGqVq/ig.png" alt="IG_Logo">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+</body>
+
+</html>
